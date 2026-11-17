@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo Hi-Tech Ingeniería | Refrigeración Comercial e Industrial</title>
+  <meta name="description" content="Instalación y mantenimiento de sistemas de refrigeración comercial e industrial a nivel nacional. Catálogo de equipos de refrigeración y distribución Shop&Roll." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ BARRA SUPERIOR DE CONTACTO ============ -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-info">
+        <a href="tel:+584122026845">📞 +58 412-2026845</a>
+        <a href="mailto:grupohiteching@gmail.com">✉ grupohiteching@gmail.com</a>
+        <span class="hide-sm">📍 Santa Mónica, Caracas · Cobertura Nacional</span>
+      </div>
+      <a href="https://instagram.com/hitech.ing" target="_blank" rel="noopener" class="topbar-social">@hitech.ing</a>
+    </div>
+  </div>
+
+  <!-- ============ HEADER PRINCIPAL (LOGO PEQUEÑO + MENÚ) ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Grupo Hi-Tech Ingeniería - Inicio">
+        <img src="assets/logo.png" alt="Grupo Hi-Tech Ingeniería" class="brand-logo" />
+        <span class="brand-text">GRUPO <strong>HI-TECH</strong><small>Ingeniería</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+
+        <div class="nav-dropdown">
+          <a href="#servicios" class="nav-link nav-link-services" id="navServicios">
+            Servicios <span class="caret">▾</span>
+          </a>
+          <div class="dropdown-panel">
+            <a href="#servicios">🛠 Mantenimiento preventivo y correctivo</a>
+            <a href="#servicios">❄ Instalación de sistemas de refrigeración</a>
+            <a href="#servicios">📐 Proyectos y cálculos térmicos</a>
+            <a href="#servicios">⚡ Automatización y control</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a href="#productos" class="nav-link" data-tab-link="refrigeracion" id="navProductos">
+            Productos <span class="caret">▾</span>
+          </a>
+          <div class="dropdown-panel">
+            <a href="#productos" data-tab-link="refrigeracion" data-filter="camaras">Cámaras frigoríficas</a>
+            <a href="#productos" data-tab-link="refrigeracion" data-filter="exhibidores">Exhibidores y estantes</a>
+            <a href="#productos" data-tab-link="refrigeracion" data-filter="compresores">Racks de compresores</a>
+            <!-- <a href="#productos" data-tab-link="refrigeracion" data-filter="hielo">Fabricadores de hielo</a> -->
+          </div>
+        </div>
+
+        <a href="#productos" class="nav-link nav-link-shop" data-tab-link="shoproll" id="navShopRoll">Shop&amp;Roll</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <a href="#contacto" class="btn btn-accent header-cta" id="headerCta">Solicitar cotización</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO SLIDER DE SERVICIOS ============ -->
+    <section class="hero-slider" id="inicio" data-slider data-interval="6000">
+      <div class="hs-slide active" style="--bg: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container hs-content">
+          <span class="hs-kicker">Servicio técnico especializado</span>
+          <h1>Mantenimiento de refrigeración comercial e industrial</h1>
+          <p>Planes preventivos y atención correctiva para que tu operación nunca se detenga.</p>
+          <div class="hs-actions">
+            <a href="#contacto" class="btn btn-accent btn-lg">Agendar visita GRATIS</a>
+            <a href="#servicios" class="btn btn-outline-white btn-lg">Ver servicios</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hs-slide" style="--bg: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container hs-content">
+          <span class="hs-kicker">Instalación llave en mano</span>
+          <h2 class="hs-title">Cámaras frigoríficas y centrales de frío</h2>
+          <p>Diseñamos, instalamos y ponemos en marcha tu sistema en cualquier lugar del país.</p>
+          <div class="hs-actions">
+            <a href="#contacto" class="btn btn-accent btn-lg">Solicitar cotización</a>
+            <a href="#productos" class="btn btn-outline-white btn-lg">Ver productos</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hs-slide" style="--bg: url('https://images.unsplash.com/photo-1580913428706-c311e67898b3?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container hs-content">
+          <span class="hs-kicker">Distribuidor oficial</span>
+          <h2 class="hs-title">Carritos y equipamiento retail Shop&amp;Roll</h2>
+          <p>Soluciones para supermercados y comercios de alto tráfico.</p>
+          <div class="hs-actions">
+            <a href="#productos" class="btn btn-accent btn-lg" data-tab-link="shoproll">Ver catálogo Shop&amp;Roll</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="hs-arrow hs-prev" aria-label="Anterior">‹</button>
+      <button class="hs-arrow hs-next" aria-label="Siguiente">›</button>
+      <div class="hs-dots"></div>
+    </section>
+
+    <!-- ============ ACCESOS RÁPIDOS (FRANJA DE ÍCONOS) ============ -->
+    <section class="quick-access">
+      <div class="container quick-grid">
+        <a href="#servicios" class="quick-item">
+          <span class="quick-icon">🛠</span>
+          <strong>Mantenimiento</strong>
+        </a>
+        <a href="#servicios" class="quick-item">
+          <span class="quick-icon">❄</span>
+          <strong>Instalación</strong>
+        </a>
+        <a href="#servicios" class="quick-item">
+          <span class="quick-icon">📐</span>
+          <strong>Proyectos</strong>
+        </a>
+        <a href="#productos" class="quick-item" data-tab-link="refrigeracion">
+          <span class="quick-icon">🧊</span>
+          <strong>Refrigeración</strong>
+        </a>
+        <a href="#productos" class="quick-item quick-shop" data-tab-link="shoproll">
+          <span class="quick-icon">🛒</span>
+          <strong>Shop&amp;Roll</strong>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS (FOCO PRINCIPAL) ============ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Nuestros servicios</span>
+          <h2>Soluciones completas en refrigeración</h2>
+          <p>Instalación y mantenimiento para el sector comercial e industrial, en todo el país.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80');">
+              <span class="service-num">01</span>
+            </div>
+            <div class="service-body">
+              <h3>Mantenimiento preventivo y correctivo</h3>
+              <p>Revisiones programadas y atención rápida de fallas.</p>
+              <a href="#contacto" class="link-arrow">Solicitar servicio →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80');">
+              <span class="service-num">02</span>
+            </div>
+            <div class="service-body">
+              <h3>Instalación de sistemas de refrigeración</h3>
+              <p>Montaje de cámaras, centrales y redes frigoríficas.</p>
+              <a href="#contacto" class="link-arrow">Solicitar servicio →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80');">
+              <span class="service-num">03</span>
+            </div>
+            <div class="service-body">
+              <h3>Proyectos y cálculos térmicos</h3>
+              <p>Ingeniería y asesoría a la medida de tu negocio.</p>
+              <a href="#contacto" class="link-arrow">Solicitar servicio →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80');">
+              <span class="service-num">04</span>
+            </div>
+            <div class="service-body">
+              <h3>Automatización y control</h3>
+              <p>Tableros eléctricos y monitoreo para ahorrar energía.</p>
+              <a href="#contacto" class="link-arrow">Solicitar servicio →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANDA DE CIFRAS ============ -->
+    <section class="stats-band" id="nosotros">
+      <div class="container stats-grid">
+        <div class="stats-intro">
+          <span class="kicker kicker-light">Quiénes somos</span>
+          <h2>Experiencia que respalda cada proyecto</h2>
+          <p>Empresa con una trayectoria impecable de mas de 15 años </p>
+        </div>
+        <div class="stat"><strong>+15</strong><span>Años de experiencia</span></div>
+        <div class="stat"><strong>24</strong><span>Estados de cobertura</span></div>
+        <div class="stat"><strong>100%</strong><span>Planes a la medida</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CATÁLOGO: REFRIGERACIÓN / SHOP&ROLL ============ -->
+    <section class="section section-alt" id="productos">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Catálogo</span>
+          <h2>Explora nuestros productos</h2>
+        </div>
+
+        <div class="catalog-tabs" role="tablist">
+          <button class="tab-btn active" data-tab="refrigeracion" role="tab" id="tabRefrigeracion">❄ Refrigeración</button>
+          <button class="tab-btn tab-shop" data-tab="shoproll" role="tab" id="tabShopRoll">🛒 Shop&amp;Roll</button>
+        </div>
+
+        <!-- Panel Refrigeración -->
+        <div class="tab-panel active" data-panel="refrigeracion">
+          <div class="filter-row">
+            <button class="chip active" data-filter="all">Todos</button>
+            <button class="chip" data-filter="camaras">Cámaras</button>
+            <button class="chip" data-filter="exhibidores">Exhibidores y estantes</button>
+            <button class="chip" data-filter="compresores">Compresores</button>
+            <!-- <button class="chip" data-filter="hielo">Hielo</button> -->
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card" data-cat="camaras">
+              <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80');"></div>
+              <span class="product-cat">Cámaras</span>
+              <h3>Cámara frigorífica modular</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <article class="product-card" data-cat="camaras">
+              <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=600&q=80');"></div>
+              <span class="product-cat">Cámaras</span>
+              <h3>Paneles y puertas aislantes</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <article class="product-card" data-cat="exhibidores">
+              <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=600&q=80');"></div>
+              <span class="product-cat">Exhibidores</span>
+              <h3>Exhibidores refrigerados</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <article class="product-card" data-cat="exhibidores">
+              <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=80');"></div>
+              <span class="product-cat">Estantes</span>
+              <h3>Estanterías industriales</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <article class="product-card" data-cat="compresores">
+              <div class="product-img" style="background-image:url('');"></div>
+              <span class="product-cat">Compresores</span>
+              <h3>Racks de compresores</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <article class="product-card" data-cat="compresores">
+              <div class="product-img" style="background-image:url('');"></div>
+              <span class="product-cat">Compresores</span>
+              <h3>Unidades condensadoras</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <!-- <article class="product-card" data-cat="hielo">
+              <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=600&q=80');"></div>
+              <span class="product-cat">Hielo</span>
+              <h3>Fabricador de hielo en escamas</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <article class="product-card" data-cat="hielo">
+              <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=600&q=80');"></div>
+              <span class="product-cat">Hielo</span>
+              <h3>Generador de hielo en bloques</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article> -->
+          </div>
+        </div>
+
+        <!-- Panel Shop&Roll -->
+        <div class="tab-panel" data-panel="shoproll" id="shop-and-roll">
+          <div class="shop-banner">
+            <div>
+              <span class="kicker kicker-light">Distribuidor oficial</span>
+              <h3>Shop&amp;Roll</h3>
+              <p>Carritos, cestas y equipamiento para supermercados y retail.</p>
+            </div>
+            <a href="#contacto" class="btn btn-accent">Solicitar catálogo completo</a>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card">
+              <div class="product-img" style="background-image:url();"></div>
+              <span class="product-cat">Carritos</span>
+              <h3>Carrito de supermercado</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <article class="product-card">
+              <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&fit=crop&w=600&q=80');"></div>
+              <span class="product-cat">Carritos</span>
+              <h3>Carrito compacto</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <article class="product-card">
+              <div class="product-img" style="background-image:url('');"></div>
+              <span class="product-cat">Cestas</span>
+              <h3>Cesta rodante</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article>
+            <!-- <article class="product-card">
+              <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=600&q=80');"></div>
+              <span class="product-cat">Retail</span>
+              <h3>Mobiliario de exhibición</h3>
+              <a href="#contacto" class="btn btn-small">Cotizar</a>
+            </article> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Cómo trabajamos</span>
+          <h2>Tres pasos, cero complicaciones</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><span>1</span><h3>Visita técnica GRATIS</h3><p>Evaluamos tus instalaciones.</p></div>
+          <div class="step"><span>2</span><h3>Plan a tu medida</h3><p>Propuesta clara y ajustada.</p></div>
+          <div class="step"><span>3</span><h3>Ejecución y respaldo</h3><p>Ponemos todo en marcha.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA + CONTACTO ============ -->
+    <section class="cta-section" id="contacto">
+      <div class="container cta-grid">
+        <div class="cta-text">
+          <h2>¿Listo para optimizar tu refrigeración?</h2>
+          <p>Agenda tu primera visita técnica sin costo.</p>
+          <div class="cta-contacts">
+            <a href="tel:+584122026845" class="cta-chip">📞 +58 412-2026845</a>
+            <a href="tel:+584142357275" class="cta-chip">📞 +58 414-2357275</a>
+            <a href="mailto:grupohiteching@gmail.com" class="cta-chip">✉ grupohiteching@gmail.com</a>
+          </div>
+        </div>
+
+        <form class="cta-form" id="contactForm" onsubmit="return handleFormSubmit(event)">
+          <input type="text" id="nombre" required placeholder="Nombre o empresa" />
+          <input type="tel" id="telefono" required placeholder="Teléfono / WhatsApp" />
+          <select id="interes">
+            <option>Servicios de refrigeración</option>
+            <option>Productos de refrigeración</option>
+            <option>Productos Shop&amp;Roll</option>
+            <option>Visita técnica GRATIS</option>
+          </select>
+          <button type="submit" class="btn btn-accent btn-block" id="submitBtn">Enviar solicitud</button>
+          <p class="form-feedback" id="formFeedback" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/logo.png" alt="Grupo Hi-Tech Ingeniería" class="footer-logo" />
+        <p>Refrigeración comercial e industrial a nivel nacional.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <a href="#servicios">Mantenimiento</a>
+        <a href="#servicios">Instalación</a>
+        <a href="#servicios">Proyectos</a>
+      </div>
+      <div>
+        <h4>Productos</h4>
+        <a href="#productos" data-tab-link="refrigeracion">Refrigeración</a>
+        <a href="#productos" data-tab-link="shoproll">Shop&amp;Roll</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="tel:+584122026845">+58 412-2026845</a>
+        <a href="mailto:grupohiteching@gmail.com">grupohiteching@gmail.com</a>
+        <a href="https://instagram.com/hitech.ing" target="_blank" rel="noopener">@hitech.ing</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Grupo Hi-Tech Ingeniería · Santa Mónica, Caracas</div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/584122026845" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp" id="whatsappBtn">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
