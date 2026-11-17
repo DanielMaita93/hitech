@@ -270,4 +270,18 @@ a { color: inherit; text-decoration: none; }
   .hs-arrow { display: none; }
   .brand-text { display: none; }
   .catalog-tabs { flex-direction: column; }
+  .stats-grid {
+    grid-template-columns: 1fr; /* Muestra las estadísticas una debajo de la otra en móvil */
+    gap: 15px;
+  }
+
+  .stat {
+    padding: 10px;
+  }
+
+  .stat strong {
+    font-size: 1.8rem; /* Reduce un poco más el tamaño del número en móviles pequeños */
+  
 }
+
+
