@@ -34,6 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     slider.querySelector('.hs-prev').addEventListener('click', () => { go(idx - 1); restart(); });
     slider.querySelector('.hs-next').addEventListener('click', () => { go(idx + 1); restart(); });
+
+    // Deslizamiento táctil (swipe) para manipular el carrusel con el dedo en móvil
+    let touchStartX = 0;
+    slider.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+    slider.addEventListener('touchend', e => {
+      const diff = e.changedTouches[0].screenX - touchStartX;
+      if (Math.abs(diff) > 45) {
+        go(diff < 0 ? idx + 1 : idx - 1);
+        restart();
+      }
+    }, { passive: true });
+
     go(0); restart();
   }
 
