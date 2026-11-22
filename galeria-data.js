@@ -2,187 +2,205 @@
     "equipos":  {
                     "area":  "Refrigeración",
                     "kicker":  "Centrales de frío · Alta eficiencia",
-                    "title":  "Equipos de Refrigeración",
-                    "desc":  "Racks de compresores, unidades condensadoras y evaporadores diseñados para máxima confiabilidad y ahorro energético.",
+                    "title":  "Sala De Máquinas",
+                    "desc":  "Racks de compresores, unidades condensadoras, tableros de control y evaporadores diseñados para máxima confiabilidad y ahorro energético.",
                     "groups":  [
                                    {
-                                       "id":  "sala",
-                                       "name":  "Racks, Condensadores y Evaporadores",
+                                       "id":  "racks",
+                                       "name":  "Racks y Centrales",
                                        "items":  [
                                                      {
-                                                         "title":  "Equipos de Refrigeración #1",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-01.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #2",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Central de Racks en Sala de Máquinas",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-02.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #3",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Central Modular Propano R290",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-03.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #4",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-04.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #5",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Casa de Máquinas Modular",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-05.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #6",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-06.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #7",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-07.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #8",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-08.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #9",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Rack Multicompresor con Tablero",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-09.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #10",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-10.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #11",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-11.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #12",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Central Integrada con Condensador en V",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-12.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #13",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Rack Compacto Careenado",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-13.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #14",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Central Propano R290 con Condensador en V",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-14.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #15",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-15.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #16",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Sala de Máquinas con Racks",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-16.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #17",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Centrales Integradas Dobles",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-17.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #18",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Central Exterior con Doble Condensador",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-18.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #19",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Unidad Careenada Suspendida en Techo",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-19.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #20",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Rack de Compresores Semiherméticos",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-20.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #21",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Sala de Máquinas Industrial",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-21.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #22",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Central Integrada de Frío",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-22.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #23",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Central Exterior con Condensación en V",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-23.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #24",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-24.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #25",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-25.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #26",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Batería de Centrales Compactas",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-26.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #27",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Centrales Modulares R290",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-27.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #28",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Centrales Dobles con Condensación en V",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-28.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #29",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Rack Multicompresor Industrial",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-29.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #30",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-30.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #31",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-31.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #32",
-                                                         "sub":  "Equipos de Refrigeración",
-                                                         "img":  "assets/galeria/equipos/foto-32.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Equipos de Refrigeración #33",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Centrales Ecológicas CO2 / R290",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-33.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #34",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Sala de Máquinas Multirack",
+                                                         "sub":  "Racks y Centrales",
                                                          "img":  "assets/galeria/equipos/foto-34.jpg"
+                                                     }
+                                                 ]
+                                   },
+                                   {
+                                       "id":  "condensadores",
+                                       "name":  "Condensadores y Unidades",
+                                       "items":  [
+                                                     {
+                                                         "title":  "Unidades Condensadoras en Plataforma",
+                                                         "sub":  "Condensadores y Unidades",
+                                                         "img":  "assets/galeria/equipos/foto-01.jpg"
                                                      },
                                                      {
-                                                         "title":  "Equipos de Refrigeración #35",
-                                                         "sub":  "Equipos de Refrigeración",
+                                                         "title":  "Batería de Condensadores Remotos en V",
+                                                         "sub":  "Condensadores y Unidades",
+                                                         "img":  "assets/galeria/equipos/foto-04.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Unidad Condensadora Flujo Horizontal",
+                                                         "sub":  "Condensadores y Unidades",
+                                                         "img":  "assets/galeria/equipos/foto-07.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Condensadores Remotos en Línea",
+                                                         "sub":  "Condensadores y Unidades",
+                                                         "img":  "assets/galeria/equipos/foto-08.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Condensador Remoto de 3 Ventiladores",
+                                                         "sub":  "Condensadores y Unidades",
+                                                         "img":  "assets/galeria/equipos/foto-15.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Unidades Condensadoras UCPack Horizontal",
+                                                         "sub":  "Condensadores y Unidades",
+                                                         "img":  "assets/galeria/equipos/foto-24.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Unidad Condensadora UCPack Vertical",
+                                                         "sub":  "Condensadores y Unidades",
+                                                         "img":  "assets/galeria/equipos/foto-25.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Condensadores Remotos en V",
+                                                         "sub":  "Condensadores y Unidades",
+                                                         "img":  "assets/galeria/equipos/foto-31.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Batería de Condensadores Exteriores",
+                                                         "sub":  "Condensadores y Unidades",
+                                                         "img":  "assets/galeria/equipos/foto-32.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Unidades Condensadoras Careenadas",
+                                                         "sub":  "Condensadores y Unidades",
                                                          "img":  "assets/galeria/equipos/foto-35.jpg"
+                                                     }
+                                                 ]
+                                   },
+                                   {
+                                       "id":  "control",
+                                       "name":  "Tableros y Control",
+                                       "items":  [
+                                                     {
+                                                         "title":  "Tablero Eléctrico en Sala de Máquinas",
+                                                         "sub":  "Tableros y Control",
+                                                         "img":  "assets/galeria/equipos/foto-06.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Tablero de Automatización y Control HMI",
+                                                         "sub":  "Tableros y Control",
+                                                         "img":  "assets/galeria/equipos/foto-10.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Tablero General de Control y Supervisión",
+                                                         "sub":  "Tableros y Control",
+                                                         "img":  "assets/galeria/equipos/foto-30.jpg"
+                                                     }
+                                                 ]
+                                   },
+                                   {
+                                       "id":  "evaporador",
+                                       "name":  "Evaporador",
+                                       "items":  [
+                                                     {
+                                                         "title":  "Evaporador Industrial de 5 Ventiladores",
+                                                         "sub":  "Evaporador",
+                                                         "img":  "assets/galeria/equipos/foto-11.jpg"
                                                      }
                                                  ]
                                    }
