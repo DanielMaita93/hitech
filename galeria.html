@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería de Productos | Grupo Hi-Tech Ingeniería</title>
+  <meta name="description" content="Galería oficial de equipos de refrigeración comercial e industrial y equipamiento retail de Grupo Hi-Tech Ingeniería." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="catalogo.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER PRINCIPAL ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Grupo Hi-Tech Ingeniería - Inicio">
+        <img src="assets/logo-horizontal.png" alt="Grupo Hi-Tech Ingeniería" class="brand-logo" />
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="index.html#inicio" class="nav-link">Inicio</a>
+
+        <div class="nav-dropdown">
+          <a href="index.html#servicios" class="nav-link nav-link-services">
+            Servicios <span class="caret">▾</span>
+          </a>
+          <div class="dropdown-panel">
+            <a href="index.html#servicios">🛠 Mantenimiento preventivo y correctivo</a>
+            <a href="index.html#servicios">❄ Instalación de sistemas de refrigeración</a>
+            <a href="index.html#servicios">📐 Proyectos y cálculos térmicos</a>
+            <a href="index.html#servicios">⚡ Automatización y control</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a href="index.html?tab=refrigeracion#productos" class="nav-link" id="navRefrigeracion">
+            Refrigeración <span class="caret">▾</span>
+          </a>
+          <div class="dropdown-panel">
+            <div class="dropdown-sub">
+              <a href="galeria.html?cat=equipos" class="sub-trigger">
+                <span>Equipos de Refrigeración</span><span class="sub-arrow">▸</span>
+              </a>
+              <div class="sub-panel">
+                <a href="galeria.html?cat=equipos">Racks de Compresores</a>
+                <a href="galeria.html?cat=equipos">Condensadores</a>
+                <a href="galeria.html?cat=equipos">Evaporadores</a>
+              </div>
+            </div>
+            <div class="dropdown-sub">
+              <a href="galeria.html?cat=exhibidoras-remotas" class="sub-trigger">
+                <span>Exhibidoras</span><span class="sub-arrow">▸</span>
+              </a>
+              <div class="sub-panel">
+                <a href="galeria.html?cat=exhibidoras-remotas">Remotas</a>
+                <a href="galeria.html?cat=autocontenidas">Autocontenidas</a>
+              </div>
+            </div>
+            <a href="galeria.html?cat=camaras">Paneles y Puertas de cavas</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <a href="index.html?tab=shoproll#productos" class="nav-link nav-link-shop" id="navRetail">
+            Equipamiento Retail <span class="caret">▾</span>
+          </a>
+          <div class="dropdown-panel">
+            <div class="dropdown-sub">
+              <a href="catalogo.html" class="sub-trigger">
+                <span>Carritos y Cestas</span><span class="sub-arrow">▸</span>
+              </a>
+              <div class="sub-panel">
+                <a href="catalogo.html?tipo=carritos">Carritos Compact Loop</a>
+                <a href="catalogo.html?tipo=cestas">Cestas Rodantes</a>
+              </div>
+            </div>
+            <a href="galeria.html?cat=checkouts">Checkouts</a>
+            <a href="galeria.html?cat=estanterias">Estanterías</a>
+          </div>
+        </div>
+        <a href="index.html#nosotros" class="nav-link">Nosotros</a>
+        <a href="index.html#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <a href="index.html#cotizar" class="btn btn-accent header-cta">Solicitar cotización</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ ENCABEZADO DINÁMICO DE CATEGORÍA ============ -->
+    <section class="cat-hero">
+      <div class="container cat-hero-inner">
+        <div>
+          <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span>/</span>
+            <a href="index.html#productos" id="bcArea">Productos</a>
+            <span>/</span>
+            <strong id="bcTitle">Galería</strong>
+          </nav>
+          <span class="kicker kicker-light" id="galKicker">Catálogo oficial</span>
+          <h1 id="galTitle">Galería de Productos</h1>
+          <p id="galDesc"></p>
+        </div>
+        <a href="index.html#productos" class="btn btn-outline-white" id="backToCatalog">← Volver al catálogo</a>
+      </div>
+    </section>
+
+    <!-- ============ NAVEGACIÓN RÁPIDA ENTRE TODAS LAS GALERÍAS ============ -->
+    <div class="gal-switcher-bar">
+      <div class="container gal-switcher">
+        <a href="galeria.html?cat=equipos" data-switch="equipos">❄ Equipos de Refrigeración</a>
+        <a href="galeria.html?cat=exhibidoras-remotas" data-switch="exhibidoras-remotas">❄ Exhibidoras Remotas</a>
+        <a href="galeria.html?cat=autocontenidas" data-switch="autocontenidas">❄ Autocontenidas</a>
+        <a href="galeria.html?cat=camaras" data-switch="camaras">❄ Paneles y Puertas de cavas</a>
+        <a href="catalogo.html">🛒 Carritos y Cestas</a>
+        <a href="galeria.html?cat=checkouts" data-switch="checkouts">🛒 Checkouts</a>
+        <a href="galeria.html?cat=estanterias" data-switch="estanterias">🛒 Estanterías</a>
+      </div>
+    </div>
+
+    <!-- ============ GALERÍA Y SUBFILTROS ============ -->
+    <section class="cat-section">
+      <div class="container">
+        <div class="cat-toolbar" id="subfilterWrap" hidden>
+          <div class="cat-filters" id="subfilterBtns"></div>
+        </div>
+
+        <div class="photo-grid" id="photoGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ VISOR LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+    <div class="lb-dialog">
+      <button class="lb-close" id="lbClose" aria-label="Cerrar galería">✕</button>
+
+      <div class="lb-layout">
+        <div class="lb-stage lb-stage-photo">
+          <button class="lb-nav lb-prev" id="lbPrev" aria-label="Foto anterior">‹</button>
+          <img src="" alt="" id="lbMainImg" />
+          <button class="lb-nav lb-next" id="lbNext" aria-label="Siguiente foto">›</button>
+          <span class="lb-counter" id="lbCounter">1 / 1</span>
+        </div>
+
+        <div class="lb-info">
+          <span class="lb-badge" id="lbArea">Refrigeración</span>
+          <h2 id="lbTitle">Producto</h2>
+          <p id="lbDesc"></p>
+
+          <div class="lb-thumbs" id="lbThumbs"></div>
+
+          <div class="lb-actions">
+            <a href="#" target="_blank" rel="noopener" class="btn btn-accent btn-block" id="lbWhatsapp">
+              Cotizar por WhatsApp
+            </a>
+            <a href="index.html#cotizar" class="btn btn-small btn-block">Solicitar cotización formal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/logo-horizontal.png" alt="Grupo Hi-Tech Ingeniería" class="footer-logo" />
+        <p>Refrigeración comercial e industrial y equipamiento retail a nivel nacional.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <a href="index.html#servicios">Mantenimiento</a>
+        <a href="index.html#servicios">Instalación</a>
+        <a href="index.html#servicios">Proyectos</a>
+      </div>
+      <div>
+        <h4>Productos</h4>
+        <a href="galeria.html?cat=equipos">Equipos de Refrigeración</a>
+        <a href="galeria.html?cat=exhibidoras-remotas">Exhibidoras</a>
+        <a href="catalogo.html">Carritos y Cestas</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="tel:+584122026845">+58 412-2026845</a>
+        <a href="mailto:grupohiteching@gmail.com">grupohiteching@gmail.com</a>
+        <a href="https://instagram.com/hitech.ing" target="_blank" rel="noopener">@hitech.ing</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Grupo Hi-Tech Ingeniería · Santa Mónica, Caracas</div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/584122026845" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+  </a>
+
+  <script src="galeria-data.js"></script>
+  <script src="galeria.js"></script>
+</body>
+</html>
