@@ -126,19 +126,26 @@ async function handleFormSubmit(e) {
   fb.hidden = true;
   fb.classList.remove('error');
 
+  const fecha = new Date().toLocaleString('es-VE', { dateStyle: 'medium', timeStyle: 'short' });
+  const telLimpio = telefono.replace(/[^\d]/g, '');
+  const linkWa = telLimpio ? `https://wa.me/${telLimpio}` : 'No especificado';
+
   const formData = new FormData();
-  formData.append('Nombre o Empresa', nombre);
-  formData.append('Correo del Cliente', correo);
-  formData.append('Teléfono / WhatsApp', telefono);
-  formData.append('Área de Interés', interes);
+  formData.append('Empresa / Cliente', nombre);
+  formData.append('Correo Electronico', correo);
+  formData.append('Telefono / WhatsApp', telefono);
+  formData.append('Area de Interes', interes);
   formData.append('Detalles del Proyecto', mensaje);
+  formData.append('WhatsApp Directo', linkWa);
+  formData.append('Fecha de Solicitud', fecha);
+  formData.append('Origen', 'Web Oficial - Grupo Hi-Tech Ingenieria');
 
   let endpoint = 'enviar-cotizacion.php';
   if (FORM_MODE === 'github') {
     endpoint = 'https://api.web3forms.com/submit';
     formData.append('access_key', WEB3FORMS_KEY);
-    formData.append('subject', `Nueva cotización web - ${nombre} (${interes})`);
-    formData.append('from_name', 'Web Grupo Hi-Tech Ingeniería');
+    formData.append('subject', `[Grupo Hi-Tech] Nueva Cotizacion - ${nombre} (${interes})`);
+    formData.append('from_name', 'Grupo Hi-Tech Ingenieria | Cotizaciones');
     formData.append('replyto', correo);
   }
 
