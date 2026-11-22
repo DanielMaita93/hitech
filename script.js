@@ -93,10 +93,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ----- Correo destino de cotizaciones (cambiar aquí cuando exista el correo corporativo) -----
+// =========================================================================
+// CONFIGURACIÓN DE ENVÍO DE COTIZACIONES
+// - En GitHub Pages (pruebas):  FORM_MODE = 'github'    (usa QUOTE_EMAIL)
+// - En Hostinger (producción):  FORM_MODE = 'hostinger' (usa enviar-cotizacion.php)
+// =========================================================================
+const FORM_MODE = 'github';
 const QUOTE_EMAIL = 'demm932024@gmail.com';
 
-// ----- Formulario con envío real al correo vía FormSubmit -----
 async function handleFormSubmit(e) {
   e.preventDefault();
   const form = e.target;
@@ -114,37 +118,40 @@ async function handleFormSubmit(e) {
   fb.hidden = true;
   fb.classList.remove('error');
 
+  const formData = new FormData();
+  formData.append('Nombre o Empresa', nombre);
+  formData.append('Correo del Cliente', correo);
+  formData.append('Teléfono / WhatsApp', telefono);
+  formData.append('Área de Interés', interes);
+  formData.append('Detalles del Proyecto', mensaje);
+  formData.append('_subject', `Nueva cotización web - ${nombre} (${interes})`);
+  formData.append('_template', 'table');
+  formData.append('_replyto', correo);
+  formData.append('_captcha', 'false');
+
+  const endpoint = FORM_MODE === 'hostinger'
+    ? 'enviar-cotizacion.php'
+    : `https://formsubmit.co/ajax/${QUOTE_EMAIL}`;
+
   try {
-    const res = await fetch(`https://formsubmit.co/ajax/${QUOTE_EMAIL}`, {
+    const res = await fetch(endpoint, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        _subject: `Nueva cotización web - ${nombre} (${interes})`,
-        _template: 'table',
-        _replyto: correo,
-        'Nombre o Empresa': nombre,
-        'Correo del Cliente': correo,
-        'Teléfono / WhatsApp': telefono,
-        'Área de Interés': interes,
-        'Detalles del Proyecto': mensaje
-      })
+      body: formData,
+      headers: { 'Accept': 'application/json' }
     });
 
-    const data = await res.json();
-    if (res.ok && (data.success === 'true' || data.success === true)) {
+    const data = await res.json().catch(() => ({}));
+    if (res.ok && (data.success === 'true' || data.success === true || data.ok === true)) {
       fb.hidden = false;
-      fb.textContent = `¡Gracias, ${nombre}! Tu solicitud de cotización fue enviada correctamente. Te contactaremos muy pronto.`;
+      fb.textContent = `¡Gracias, ${nombre}! Recibimos tu solicitud de cotización. Te contactaremos a la brevedad.`;
       form.reset();
     } else {
-      throw new Error(data.message || 'No se pudo enviar el correo');
+      throw new Error('send_failed');
     }
   } catch (err) {
     fb.hidden = false;
     fb.classList.add('error');
-    fb.textContent = 'No pudimos enviar automáticamente en este entorno. Si estás probando localmente (file://), abre la web en un servidor local o en hosting para activar el envío por correo.';
+    fb.innerHTML = 'Ocurrió un inconveniente al enviar el formulario. También puedes escribirnos directo por <a href="https://wa.me/584122026845" target="_blank" rel="noopener" style="text-decoration:underline;">WhatsApp aquí</a>.';
   } finally {
     btn.disabled = false;
     btn.textContent = 'Enviar solicitud';
