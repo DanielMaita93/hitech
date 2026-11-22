@@ -84,6 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ----- Preseleccionar opción en el formulario (ej. Repuestos) -----
+  document.querySelectorAll('[data-preselect]').forEach(link => {
+    link.addEventListener('click', () => {
+      const sel = document.getElementById('interes');
+      if (sel) sel.value = link.dataset.preselect;
+    });
+  });
+
   // ----- Leer ?tab=shoproll o ?tab=refrigeracion al volver desde galeria/catalogo -----
   const urlParams = new URLSearchParams(window.location.search);
   const initialTab = urlParams.get('tab');
