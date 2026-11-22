@@ -3,204 +3,186 @@
                     "area":  "Refrigeración",
                     "kicker":  "Centrales de frío · Alta eficiencia",
                     "title":  "Sala De Máquinas",
-                    "desc":  "Racks de compresores, unidades condensadoras, tableros de control y evaporadores diseñados para máxima confiabilidad y ahorro energético.",
+                    "desc":  "Soluciones integrales de salas de máquinas diseñadas para máxima confiabilidad y ahorro energético.",
                     "groups":  [
                                    {
-                                       "id":  "racks",
-                                       "name":  "Racks y Centrales",
+                                       "id":  "sala",
+                                       "name":  "Sala De Máquinas",
                                        "items":  [
                                                      {
-                                                         "title":  "Central de Racks en Sala de Máquinas",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-02.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Central Modular Propano R290",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-03.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Casa de Máquinas Modular",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-05.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Rack Multicompresor con Tablero",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-09.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Central Integrada con Condensador en V",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-12.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Rack Compacto Careenado",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-13.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Central Propano R290 con Condensador en V",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-14.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Sala de Máquinas con Racks",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-16.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Centrales Integradas Dobles",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-17.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Central Exterior con Doble Condensador",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-18.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Unidad Careenada Suspendida en Techo",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-19.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Rack de Compresores Semiherméticos",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-20.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Sala de Máquinas Industrial",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-21.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Central Integrada de Frío",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-22.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Central Exterior con Condensación en V",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-23.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Batería de Centrales Compactas",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-26.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Centrales Modulares R290",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-27.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Centrales Dobles con Condensación en V",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-28.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Rack Multicompresor Industrial",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-29.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Centrales Ecológicas CO2 / R290",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-33.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Sala de Máquinas Multirack",
-                                                         "sub":  "Racks y Centrales",
-                                                         "img":  "assets/galeria/equipos/foto-34.jpg"
-                                                     }
-                                                 ]
-                                   },
-                                   {
-                                       "id":  "condensadores",
-                                       "name":  "Condensadores y Unidades",
-                                       "items":  [
-                                                     {
-                                                         "title":  "Unidades Condensadoras en Plataforma",
-                                                         "sub":  "Condensadores y Unidades",
+                                                         "title":  "Sala De Máquinas #1",
+                                                         "sub":  "Sala De Máquinas",
                                                          "img":  "assets/galeria/equipos/foto-01.jpg"
                                                      },
                                                      {
-                                                         "title":  "Batería de Condensadores Remotos en V",
-                                                         "sub":  "Condensadores y Unidades",
+                                                         "title":  "Sala De Máquinas #2",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-02.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #3",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-03.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #4",
+                                                         "sub":  "Sala De Máquinas",
                                                          "img":  "assets/galeria/equipos/foto-04.jpg"
                                                      },
                                                      {
-                                                         "title":  "Unidad Condensadora Flujo Horizontal",
-                                                         "sub":  "Condensadores y Unidades",
-                                                         "img":  "assets/galeria/equipos/foto-07.jpg"
+                                                         "title":  "Sala De Máquinas #5",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-05.jpg"
                                                      },
                                                      {
-                                                         "title":  "Condensadores Remotos en Línea",
-                                                         "sub":  "Condensadores y Unidades",
-                                                         "img":  "assets/galeria/equipos/foto-08.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Condensador Remoto de 3 Ventiladores",
-                                                         "sub":  "Condensadores y Unidades",
-                                                         "img":  "assets/galeria/equipos/foto-15.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Unidades Condensadoras UCPack Horizontal",
-                                                         "sub":  "Condensadores y Unidades",
-                                                         "img":  "assets/galeria/equipos/foto-24.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Unidad Condensadora UCPack Vertical",
-                                                         "sub":  "Condensadores y Unidades",
-                                                         "img":  "assets/galeria/equipos/foto-25.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Condensadores Remotos en V",
-                                                         "sub":  "Condensadores y Unidades",
-                                                         "img":  "assets/galeria/equipos/foto-31.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Batería de Condensadores Exteriores",
-                                                         "sub":  "Condensadores y Unidades",
-                                                         "img":  "assets/galeria/equipos/foto-32.jpg"
-                                                     },
-                                                     {
-                                                         "title":  "Unidades Condensadoras Careenadas",
-                                                         "sub":  "Condensadores y Unidades",
-                                                         "img":  "assets/galeria/equipos/foto-35.jpg"
-                                                     }
-                                                 ]
-                                   },
-                                   {
-                                       "id":  "control",
-                                       "name":  "Tableros y Control",
-                                       "items":  [
-                                                     {
-                                                         "title":  "Tablero Eléctrico en Sala de Máquinas",
-                                                         "sub":  "Tableros y Control",
+                                                         "title":  "Sala De Máquinas #6",
+                                                         "sub":  "Sala De Máquinas",
                                                          "img":  "assets/galeria/equipos/foto-06.jpg"
                                                      },
                                                      {
-                                                         "title":  "Tablero de Automatización y Control HMI",
-                                                         "sub":  "Tableros y Control",
+                                                         "title":  "Sala De Máquinas #7",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-07.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #8",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-08.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #9",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-09.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #10",
+                                                         "sub":  "Sala De Máquinas",
                                                          "img":  "assets/galeria/equipos/foto-10.jpg"
                                                      },
                                                      {
-                                                         "title":  "Tablero General de Control y Supervisión",
-                                                         "sub":  "Tableros y Control",
-                                                         "img":  "assets/galeria/equipos/foto-30.jpg"
-                                                     }
-                                                 ]
-                                   },
-                                   {
-                                       "id":  "evaporador",
-                                       "name":  "Evaporador",
-                                       "items":  [
-                                                     {
-                                                         "title":  "Evaporador Industrial de 5 Ventiladores",
-                                                         "sub":  "Evaporador",
+                                                         "title":  "Sala De Máquinas #11",
+                                                         "sub":  "Sala De Máquinas",
                                                          "img":  "assets/galeria/equipos/foto-11.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #12",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-12.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #13",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-13.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #14",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-14.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #15",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-15.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #16",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-16.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #17",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-17.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #18",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-18.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #19",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-19.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #20",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-20.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #21",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-21.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #22",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-22.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #23",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-23.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #24",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-24.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #25",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-25.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #26",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-26.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #27",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-27.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #28",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-28.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #29",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-29.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #30",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-30.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #31",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-31.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #32",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-32.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #33",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-33.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #34",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-34.jpg"
+                                                     },
+                                                     {
+                                                         "title":  "Sala De Máquinas #35",
+                                                         "sub":  "Sala De Máquinas",
+                                                         "img":  "assets/galeria/equipos/foto-35.jpg"
                                                      }
                                                  ]
                                    }

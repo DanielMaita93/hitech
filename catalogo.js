@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="sr-zoom-hint">🔍 Ver ${model.variants.length} colores</span>
         </div>
         <div class="sr-body">
-          <span class="sr-type">${model.category === 'carritos' ? 'Carrito Compact Loop' : 'Cesta Rodante Shop&Roll'}</span>
+          <span class="sr-type">${model.category === 'carritos' ? 'Carrito Compact Loop' : 'Cesta con Ruedas Shop&Roll'}</span>
           <h3>${model.name}</h3>
           <p class="sr-desc">${model.desc}</p>
           <div class="sr-colors-block">

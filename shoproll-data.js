@@ -315,7 +315,7 @@
     {
         "id":  "cesta-34",
         "name":  "Cesta Shop\u0026Roll 34L",
-        "desc":  "Cesta rodante ligera con asa telescópica para compras ágiles en pasillos estrechos.",
+        "desc":  "Cesta con ruedas ligera con asa telescópica para compras ágiles en pasillos estrechos.",
         "capacity":  "34 Litros",
         "category":  "cestas",
         "variants":  [
@@ -501,7 +501,7 @@
     {
         "id":  "cesta-65",
         "name":  "Cesta Shop\u0026Roll 65L",
-        "desc":  "Cesta rodante de alta capacidad que incrementa el ticket promedio en tienda.",
+        "desc":  "Cesta con ruedas de alta capacidad que incrementa el ticket promedio en tienda.",
         "capacity":  "65 Litros",
         "category":  "cestas",
         "variants":  [
