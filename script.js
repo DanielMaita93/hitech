@@ -103,11 +103,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // =========================================================================
 // CONFIGURACIÓN DE ENVÍO DE COTIZACIONES
-// - En GitHub Pages (pruebas):  FORM_MODE = 'github'    (usa QUOTE_EMAIL)
+// - En GitHub Pages (pruebas):  FORM_MODE = 'github'    (usa Web3Forms)
 // - En Hostinger (producción):  FORM_MODE = 'hostinger' (usa enviar-cotizacion.php)
 // =========================================================================
 const FORM_MODE = 'github';
-const QUOTE_EMAIL = 'demm932024@gmail.com';
+const WEB3FORMS_KEY = '67a72741-4a91-48b6-b0eb-a91f3a81db04';
 
 async function handleFormSubmit(e) {
   e.preventDefault();
@@ -132,14 +132,15 @@ async function handleFormSubmit(e) {
   formData.append('Teléfono / WhatsApp', telefono);
   formData.append('Área de Interés', interes);
   formData.append('Detalles del Proyecto', mensaje);
-  formData.append('_subject', `Nueva cotización web - ${nombre} (${interes})`);
-  formData.append('_template', 'table');
-  formData.append('_replyto', correo);
-  formData.append('_captcha', 'false');
 
-  const endpoint = FORM_MODE === 'hostinger'
-    ? 'enviar-cotizacion.php'
-    : `https://formsubmit.co/ajax/${QUOTE_EMAIL}`;
+  let endpoint = 'enviar-cotizacion.php';
+  if (FORM_MODE === 'github') {
+    endpoint = 'https://api.web3forms.com/submit';
+    formData.append('access_key', WEB3FORMS_KEY);
+    formData.append('subject', `Nueva cotización web - ${nombre} (${interes})`);
+    formData.append('from_name', 'Web Grupo Hi-Tech Ingeniería');
+    formData.append('replyto', correo);
+  }
 
   try {
     const res = await fetch(endpoint, {
@@ -149,17 +150,17 @@ async function handleFormSubmit(e) {
     });
 
     const data = await res.json().catch(() => ({}));
-    if (res.ok && (data.success === 'true' || data.success === true || data.ok === true)) {
+    if (res.ok && (data.success === true || data.ok === true)) {
       fb.hidden = false;
       fb.textContent = `¡Gracias, ${nombre}! Recibimos tu solicitud de cotización. Te contactaremos a la brevedad.`;
       form.reset();
     } else {
-      throw new Error('send_failed');
+      throw new Error(data.message || 'send_failed');
     }
   } catch (err) {
     fb.hidden = false;
     fb.classList.add('error');
-    fb.innerHTML = 'Ocurrió un inconveniente al enviar el formulario. También puedes escribirnos directo por <a href="https://wa.me/584122026845" target="_blank" rel="noopener" style="text-decoration:underline;">WhatsApp aquí</a>.';
+    fb.innerHTML = 'No pudimos completar el envío en este momento. Puedes escribirnos directo por <a href="https://wa.me/584122026845" target="_blank" rel="noopener" style="text-decoration:underline;">WhatsApp aquí</a>.';
   } finally {
     btn.disabled = false;
     btn.textContent = 'Enviar solicitud';
