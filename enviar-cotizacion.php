@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   exit;
 }
 
-// Configura aquí tus correos corporativos en Hostinger
-$CORREO_DESTINO   = 'cotizaciones@tudominio.com';
-$CORREO_REMITENTE = 'no-reply@tudominio.com';
+// Correos corporativos oficiales de Grupo Hi-Tech Ingeniería en Hostinger
+$CORREO_DESTINO   = 'Administracion@grupohiteching.com, Lvelasquez@grupohiteching.com';
+$CORREO_REMITENTE = 'Administracion@grupohiteching.com';
 
 $nombre   = trim($_POST['Empresa_/_Cliente']     ?? $_POST['Empresa / Cliente']     ?? '');
 $correo   = trim($_POST['Correo_Electronico']    ?? $_POST['Correo Electronico']    ?? '');

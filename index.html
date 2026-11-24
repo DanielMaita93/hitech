@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=8" />
 </head>
 <body>
 
@@ -20,7 +20,12 @@
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <a href="#inicio" class="brand" aria-label="Grupo Hi-Tech Ingeniería - Inicio">
-        <img src="assets/logo-horizontal.png" alt="Grupo Hi-Tech Ingeniería" class="brand-logo" />
+        <img src="assets/favicon.png" alt="Emblema Grupo Hi-Tech Ingeniería" class="brand-icon" />
+        <span class="brand-wordmark">
+          <span class="bw-top">GRUPO</span>
+          <span class="bw-main">HI-tech</span>
+          <span class="bw-sub">Ingeniería</span>
+        </span>
       </a>
 
       <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
@@ -323,13 +328,13 @@
           <div class="products-grid">
             <article class="product-card" data-cat="carritos">
               <div class="product-img" style="background-image:url('assets/productos/carritos.jpg');"></div>
-              <span class="product-cat">Carritos y Cestas · Shop&amp;Roll</span>
+              <span class="product-cat">Carritos · Shop&amp;Roll</span>
               <h3>Carritos de Supermercado</h3>
               <a href="catalogo.html?tipo=carritos" class="btn btn-small">Ver galería</a>
             </article>
             <article class="product-card" data-cat="carritos">
               <div class="product-img" style="background-image:url('assets/productos/cestas.jpg');"></div>
-              <span class="product-cat">Carritos y Cestas · Shop&amp;Roll</span>
+              <span class="product-cat">Cestas · Shop&amp;Roll</span>
               <h3>Cestas con Ruedas</h3>
               <a href="catalogo.html?tipo=cestas" class="btn btn-small">Ver galería</a>
             </article>
@@ -359,14 +364,61 @@
           <p>Suministramos repuestos originales para sistemas de refrigeración comercial e industrial. Consulta disponibilidad y cotiza directamente.</p>
         </div>
 
-        <!-- Reemplazar cada .brand-slot por <img src="assets/marcas/marca.png" alt="Marca" /> -->
-        <div class="brands-grid">
-          <div class="brand-slot"><span>Logo Marca 1</span></div>
-          <div class="brand-slot"><span>Logo Marca 2</span></div>
-          <div class="brand-slot"><span>Logo Marca 3</span></div>
-          <div class="brand-slot"><span>Logo Marca 4</span></div>
-          <div class="brand-slot"><span>Logo Marca 5</span></div>
-          <div class="brand-slot"><span>Logo Marca 6</span></div>
+        <!-- Carrusel doble en sentido contrario de marcas de repuestos -->
+        <div class="brands-marquee-stack" aria-label="Marcas de repuestos disponibles">
+          <!-- Fila 1: hacia la izquierda -->
+          <div class="brands-marquee">
+            <div class="brands-track">
+              <div class="brand-card"><img src="assets/marcas/copeland.png" alt="Copeland" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/danfoss.svg" alt="Danfoss" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/tecumseh.svg" alt="Tecumseh" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/bitzer.svg" alt="Bitzer" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/emerson.svg" alt="Emerson" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/kielmann.svg" alt="Kielmann" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/embraco.svg" alt="Embraco" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/alco.png" alt="Alco" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/full-gauge.jpg" alt="Full Gauge" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/yellow-jacket.png" alt="Yellow Jacket" loading="lazy" /></div>
+              <!-- Duplicado fila 1 -->
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/copeland.png" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/danfoss.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/tecumseh.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/bitzer.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/emerson.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/kielmann.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/embraco.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/alco.png" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/full-gauge.jpg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/yellow-jacket.png" alt="" loading="lazy" /></div>
+            </div>
+          </div>
+
+          <!-- Fila 2: hacia la derecha -->
+          <div class="brands-marquee">
+            <div class="brands-track brands-track-reverse">
+              <div class="brand-card"><img src="assets/marcas/testo.svg" alt="Testo" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/sporlan.svg" alt="Sporlan" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/castel.svg" alt="Castel" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/dixell.png" alt="Dixell" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/suniso.jpg" alt="Suniso" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/honeywell.svg" alt="Honeywell" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/rgc.webp" alt="RGC" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/freeze.png" alt="Freeze" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/exceline.png" alt="Exceline" loading="lazy" /></div>
+              <div class="brand-card"><img src="assets/marcas/degar.svg" alt="Degar" loading="lazy" /></div>
+              <!-- Duplicado fila 2 -->
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/testo.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/sporlan.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/castel.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/dixell.png" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/suniso.jpg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/honeywell.svg" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/rgc.webp" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/freeze.png" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/exceline.png" alt="" loading="lazy" /></div>
+              <div class="brand-card" aria-hidden="true"><img src="assets/marcas/degar.svg" alt="" loading="lazy" /></div>
+            </div>
+          </div>
         </div>
 
         <div class="brands-cta">
@@ -415,11 +467,12 @@
         <div class="cta-text">
           <span class="kicker kicker-light">Cotización y asesoría</span>
           <h2>¿Listo para optimizar tu proyecto?</h2>
-          <p>Solicita tu cotización o agenda tu primera visita técnica <strong>GRATIS</strong> en cualquier parte del país.</p>
+          <p style="margin-bottom:6px;">Solicita tu cotización o agenda tu primera visita técnica <strong>GRATIS</strong></p>
+          <p style="font-size:.82rem;opacity:.75;margin-bottom:24px;">Ciertas condiciones aplican.</p>
           <div class="cta-benefits">
-            <span>✓ Atención comercial e industrial</span>
-            <span>✓ Propuesta personalizada sin compromiso</span>
-            <span>✓ Respuesta rápida por WhatsApp o correo</span>
+            <span>✓ Atendemos en sectores comerciales e industriales.</span>
+            <span>✓ Planes personalizados para cada requerimiento.</span>
+            <span>✓ Cobertura a nivel nacional.</span>
           </div>
         </div>
 
@@ -456,8 +509,10 @@
             <div class="contact-card">
               <div class="contact-icon">📞</div>
               <div>
-                <h3>Teléfonos y WhatsApp</h3>
-                <a href="tel:+584122026845">+58 412-2026845</a>
+                <h3>Teléfonos</h3>
+                <span class="contact-note" style="margin-top:0;font-weight:600;color:var(--petrol);">Ing. Luis Velásquez</span>
+                <a href="tel:+584122026845" style="margin-bottom:8px;">+58 412-2026845</a>
+                <span class="contact-note" style="margin-top:0;font-weight:600;color:var(--petrol);">Ing. Jesús Velásquez</span>
                 <a href="tel:+584142357275">+58 414-2357275</a>
               </div>
             </div>
@@ -465,8 +520,10 @@
             <div class="contact-card">
               <div class="contact-icon">✉</div>
               <div>
-                <h3>Correo electrónico</h3>
-                <a href="mailto:grupohiteching@gmail.com">grupohiteching@gmail.com</a>
+                <h3>Correos electrónicos</h3>
+                <a href="mailto:Lvelasquez@grupohiteching.com">Lvelasquez@grupohiteching.com</a>
+                <a href="mailto:Jvelasquez@grupohiteching.com">Jvelasquez@grupohiteching.com</a>
+                <a href="mailto:Administracion@grupohiteching.com">Administracion@grupohiteching.com</a>
                 <span class="contact-note">Presupuestos, planos y atención técnica</span>
               </div>
             </div>
@@ -475,7 +532,7 @@
               <div class="contact-icon">📍</div>
               <div>
                 <h3>Dirección</h3>
-                <p>Santa Mónica, Caracas, Venezuela</p>
+                <p>Calle Simón Planas, Quinta Maritza, Urb. Santa Mónica, Caracas, Distrito Capital</p>
                 <span class="contact-note">Servicio y suministro a nivel nacional</span>
               </div>
             </div>
@@ -492,15 +549,15 @@
 
           <div class="map-card">
             <iframe
-              title="Ubicación Grupo Hi-Tech Ingeniería - Santa Mónica, Caracas"
-              src="https://www.google.com/maps?q=Santa+M%C3%B3nica,+Caracas,+Venezuela&output=embed"
+              title="Ubicación Grupo Hi-Tech Ingeniería - Calle Simón Planas, Santa Mónica, Caracas"
+              src="https://www.google.com/maps?q=Calle+Sim%C3%B3n+Planas,+Santa+M%C3%B3nica,+Caracas,+Distrito+Capital,+Venezuela&z=17&output=embed"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               allowfullscreen>
             </iframe>
             <div class="map-footer">
-              <span>📍 Santa Mónica, Caracas, Distrito Capital</span>
-              <a href="https://www.google.com/maps/search/?api=1&query=Santa+M%C3%B3nica,+Caracas,+Venezuela" target="_blank" rel="noopener" class="map-open-link">Abrir en Google Maps →</a>
+              <span>📍 Calle Simón Planas, Qta. Maritza, Urb. Santa Mónica</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Calle+Sim%C3%B3n+Planas,+Santa+M%C3%B3nica,+Caracas,+Distrito+Capital,+Venezuela" target="_blank" rel="noopener" class="map-open-link">Abrir en Google Maps →</a>
             </div>
           </div>
         </div>
@@ -529,7 +586,9 @@
       <div>
         <h4>Contacto</h4>
         <a href="tel:+584122026845">+58 412-2026845</a>
-        <a href="mailto:grupohiteching@gmail.com">grupohiteching@gmail.com</a>
+        <a href="mailto:Lvelasquez@grupohiteching.com">Lvelasquez@grupohiteching.com</a>
+        <a href="mailto:Jvelasquez@grupohiteching.com">Jvelasquez@grupohiteching.com</a>
+        <a href="mailto:Administracion@grupohiteching.com">Administracion@grupohiteching.com</a>
         <a href="https://instagram.com/hitech.ing" target="_blank" rel="noopener">@hitech.ing</a>
       </div>
     </div>
